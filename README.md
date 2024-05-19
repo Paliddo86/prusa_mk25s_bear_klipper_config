@@ -5,6 +5,8 @@ This repository contains a customized klipper configuration for klipper for mk2.
 
 Clone this config with command git clone https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config ~/printer_data/klipper-mk25sk
 If you are adding this configuration after installing Klipper via KIAUH, the directory might be different - typically following ~/[printer_name]/printer_data/config, where [printer_name] is the name you selected during the Kiauh installation
+
+# Moonraker config
 Add the following to the to moonraker.conf to enable automatic updates
 
 [update_manager mk25sk]
@@ -25,5 +27,9 @@ To use this config, the firmware should be compiled for the AVR atmega2560. To u
 Launch command: ls /dev/serial/by-id/* for get the current id of the serial connected and use it with the followed command
 
 To flash: make flash FLASH_DEVICE=/dev/serial/by-id/[serial address founded]
+
+# OrangePi Zero Plus Uart Configuration
+If you want to connect Arduino Mega / ramps with the serial connection and reserve the USB port for use a webcam enable with the command:
+armbian-config in system setting the uart 1, reboot the orangepi and use the ttyS1 on printer configuration of klipper.
 
 Happy Print!!!
