@@ -9,6 +9,7 @@ If you are adding this configuration after installing Klipper via KIAUH, the dir
 # Moonraker config
 Add the following to the to moonraker.conf to enable automatic updates
 
+```
 [update_manager mk25sk]
 type: git_repo  
 origin: https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config.git  
@@ -16,6 +17,8 @@ path: ~/printer_data/config/klipper-mk25sk
 primary_branch: master  
 is_system_service: False  
 managed_services: klipper  
+```
+
 
 Copy https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config/printer.template.cfg to printer.cfg in your klipper config  
 Adjust config to your hardware  
