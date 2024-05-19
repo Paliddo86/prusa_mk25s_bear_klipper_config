@@ -10,17 +10,17 @@ If you are adding this configuration after installing Klipper via KIAUH, the dir
 Add the following to the to moonraker.conf to enable automatic updates
 
 [update_manager mk25sk]
-type: git_repo
-origin: https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config.git
-path: ~/printer_data/config/klipper-mk25sk
-primary_branch: master
-is_system_service: False
-managed_services: klipper
+type: git_repo  
+origin: https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config.git  
+path: ~/printer_data/config/klipper-mk25sk  
+primary_branch: master  
+is_system_service: False  
+managed_services: klipper  
 
-Copy https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config/printer.template.cfg to printer.cfg in your klipper config
-Adjust config to your hardware
-Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
-You will still need a USB cable as you cannot flash via an internal serial port. You can also use any other computer to compile your firmware.
+Copy https://github.com/Paliddo86/prusa_mk25s_bear_klipper_config/printer.template.cfg to printer.cfg in your klipper config  
+Adjust config to your hardware  
+Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller  
+You will still need a USB cable as you cannot flash via an internal serial port. You can also use any other computer to compile your firmware.  
 
 To use this config, the firmware should be compiled for the AVR atmega2560. To use via serial, in "make menuconfig" select "Enable extra low-level configuration options" and back without select anything.
 
